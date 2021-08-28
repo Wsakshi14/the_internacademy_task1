@@ -1,0 +1,575 @@
+@import url('font.css');
+
+
+html, body{
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+:root{
+
+    /*      Theme colors        */
+    --text-gray: #eff1f5;
+    --text-light : #161515da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* gradient color   */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /*      theme font-family   */
+    --Abel: 'Abel', cursive;
+    --Anton: 'Anton', cursive;
+    --Josefin : 'Josefin', cursive;
+    --Lexend: 'Lexend', cursive;
+    --Livvic : 'Livvic', cursive;
+}
+
+
+/* ---------------- Global Classes ---------------*/
+
+a{
+    text-decoration: none;
+    color: var(--text-gray);
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style-type: none;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-gray{
+    color: rgb(242, 248, 245);
+}
+
+p{
+    font-family: var(--Lexend);
+    color: var(--text-light);
+}
+
+/* ------x------- Global Classes -------x-------*/
+
+/* --------------- navbar ----------------- */
+
+.nav{
+    background: rgb(10, 9, 9);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+
+label.logo{
+  font-family: "blue serifs", cursive;
+  background: -webkit-linear-gradient(#43b7ec, #388d4b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+
+
+.nav .nav-menu{    
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse{
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i{
+    font-size: 1.4rem;
+    color: ghostwhite;
+}
+
+.collapse{
+    height: 30rem;
+}
+
+.nav .nav-items{
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: var(--Abel);
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: var(--midnight);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: var(--white);
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+    font-size: 1.6rem;
+}
+
+.nav .social{
+    padding: 1.4rem 0
+}
+
+.nav .social i{
+    padding: 0 .2rem;
+}
+
+.nav .social i:hover{
+    color: #a1c4cf;
+}
+
+/* -------x------- navbar ---------x------- */
+
+
+/* ----------------- Main Content----------- */
+
+/* --------------- Site title ---------------- */
+main .site-title{
+    background: url('images/background_image3.jpg');
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background{
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--bg-color);
+}
+
+main .site-title h1, h3{
+    margin: .3rem;
+}
+
+main .site-title .btn{
+    margin: 1.8rem;
+    background: var(--sky);
+    font-family: Lucida Handwriting;
+}
+
+main .site-title .btn:hover{
+    background: black;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/* --------x------ Site title --------x------- */
+
+
+
+/* travel Blog Section */
+
+.travel_section {
+  width: 100%;
+  padding: 20px 100px;
+  font-family: cursive;
+}
+
+.travel__title {
+  font-size: 45px;
+  font-family: "Rampart One", cursive;
+  background: -webkit-linear-gradient(#8e0e00, #1f1c18);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding: 20px;
+}
+.travel__title h2 {
+  font-size: 40px;
+}
+.travel__blog {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: cursive;
+}
+.blog-item {
+  max-width: 355px;
+  width: 100%;
+  margin: 20px 10px;
+}
+.blog-img {
+  width: 80%;
+}
+.blog-img img {
+  max-height: 300px;
+  max-width: 300px;
+  margin: 10px 50px;
+}
+.blog-text {
+  text-align: center;
+  line-height: 29px;
+}
+.blog-text h2 {
+  font-size: 18px;
+}
+.blog-text p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.blog-text a {
+  text-align: center;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+  display: inline-block;
+  background-color: rgb(32, 29, 29);
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* ----------- About Us Section ------------ */
+
+.about__section {
+    width: 100%;
+    padding: 30px 0px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-family: cursive;
+  }
+  .about__section img {
+    height: 400px;
+    width: 600px;
+  }
+  .about__content {
+    width: 1130px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .about__text {
+    margin-left: 30px;
+    margin-top: 0;
+  }
+  .about__text h1 {
+    font-family: "Rampart One", cursive;
+    background: -webkit-linear-gradient(#8e0e00, #1f1c18);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    color: green;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  .about__text p {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 29px;
+  }
+  .about__text h2 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+  .about__text span {
+    font-size: 30px;
+    color: rgb(0, 171, 132);
+  }
+  
+  /* ------------- Contact Us Section ------------ */
+  
+  .contact__section {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(139, 15, 108, 0.5), rgba(99, 14, 85, 0.5)),
+      url("./images/Background-img-3.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: cursive;
+  }
+  
+  .container {
+    max-width: 800px;
+    height: auto;
+    margin: 50px auto;
+    padding: 50px;
+  }
+  .container h1 {
+    font-family: "Rampart One", cursive;
+    background: -webkit-linear-gradient(#e2db7e, #eff173);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 45px;
+    text-align: center;
+    color: wheat;
+    margin-bottom: 30px;
+  }
+  .container p {
+    font-size: 20px;
+    text-align: center;
+    color: wheat;
+    margin-bottom: 10px;
+  }
+  .input,
+  .msg .area {
+    font-family: cursive;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+  }
+  .msg .area {
+    height: 200px;
+  }
+  .submit {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .btn {
+    box-shadow: 0px 10px 14px -7px #f8f7f2;
+    background: linear-gradient(to bottom, #ec9511 5%, #eed280 100%);
+    background-color: #f0ede8;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: cursive;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 32px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #f7f6f6;
+  }
+  .btn:hover {
+    background: linear-gradient(to bottom, #f770a4 5%, #ec4242 100%);
+    background-color: #408c99;
+  }
+  .btn:active {
+    position: relative;
+    top: 1px;
+  }
+  
+  /* ----------------- Footer --------------------- */
+
+footer.footer{
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+footer.footer .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+footer.footer .container > div{
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2{
+    color: var(--white);
+}
+
+footer.footer .newsletter .form-element{
+    background: black;
+    display: inline-block;
+}
+
+footer.footer .newsletter .form-element input{
+    padding: .15rem .15rem;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: var(--Josefin);
+    font-size: 1rem;
+    width: 74%;
+}
+
+footer.footer .newsletter .form-element span{
+    background: var(--sky);
+    padding: .5rem .7rem;
+    cursor: pointer;
+}
+
+footer.footer .follow div i{
+    color: var(--white);
+    padding: 0 .4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: var(--Josefin);
+}
+
+footer.footer .rights h4 a{
+    color: var(--white);
+}
+
+footer.footer .move-up{
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+footer.footer .travel_tips{
+    color:var(--white);
+    font-family: var(--Josefin);
+}
+
+footer.footer .travel_community{
+    color: var(--white);
+    font-family: var(--Josefin);
+}
+
+footer.footer .move-up span{
+    color: var(--midnight);
+}
+
+footer.footer .move-up span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* ---------x------- Footer ----------x---------- */
+  
+  /* Media Queries For Responsive Page */
+  
+  @media (max-width: 858px) {
+    .checkbtn {
+      display: block;
+    }
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 75vh;
+      background: rgb(17, 28, 72);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+      z-index: 1;
+    }
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    a:hover,
+    a.active {
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul {
+      left: 0;
+    }
+    label .logo {
+      font-size: 30px;
+    }
+    .content h1 {
+      font-size: 25px;
+    }
+    .content p {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .about__content {
+      flex-direction: column;
+    }
+    .about__section img {
+      margin-left: 45px;
+      width: 300px;
+    }
+    .about__text h1 {
+      font-size: 30px;
+      color: green;
+      text-transform: capitalize;
+      text-align: center;
+      margin-top: 22px;
+    }
+    .about__text p {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 10px;
+      line-height: 19px;
+    }
+    .about__text h2 {
+      text-align: center;
+      font-size: 18px;
+      margin-top: 40px;
+    }
+    .about__text span {
+      font-size: 20px;
+      color: rgb(0, 171, 132);
+    }
+  }
